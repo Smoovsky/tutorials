@@ -30,18 +30,18 @@ linter-eslint的配置步骤稍微繁琐一些。
 
    - 1. 找到：
   `C:\Users\[user name]\.atom\config.cson`
-     - MAC和Linux的请自行寻找配置文件的路径
-     - 替换[user name]为你的用户名
+        - MAC和Linux的请自行寻找配置文件的路径
+        - 替换[user name]为你的用户名
 
    - 2. 为`"linter-eslint"`栏添加如下设置：
-     -  ```
-        "linter-eslint":
-            disableWhenNoEslintConfig: false
-            eslintrcPath: "C:\\Users\\[user name]\\"
-            globalNodePath: "C:\\Program Files\\nodejs"
-        ```
-     - eslintrcPath将是存放es-lint配置文件的路径，一般选择自己的用户文档
-     - 替换[user name]为你的用户名
-     - globalNodePath是nodejs的安装路径
+        -  ```
+            "linter-eslint":
+                disableWhenNoEslintConfig: false
+                eslintrcPath: "C:\\Users\\[user name]\\"
+                globalNodePath: "C:\\Program Files\\nodejs"
+            ```
+        - eslintrcPath将是存放es-lint配置文件的路径，一般选择自己的用户文档
+        - 替换[user name]为你的用户名
+        - globalNodePath是nodejs的安装路径
 
 3. 配置eslint：
