@@ -23,26 +23,25 @@ language-babel的配置完全可以随个人喜好，本身自带的补完JSX内
 #### linter-eslint
 linter-eslint的配置步骤稍微繁琐一些。
 1. 在全局安装eslint, eslint-plugin-react, babel-eslint(您也可以使用每个project内部的这些包，一般可以全局安装)
-
 运行：
  `npm install -g eslint eslint-plugin-react babel-eslint`
 
 2. 对linter-eslint进行设置，以下设置也可以在Atom的插件设置区完成：
 
-  1. 找到：
+   - 1. 找到：
   `C:\Users\[user name]\.atom\config.cson`
-    - MAC和Linux的请自行寻找配置文件的路径
-    - 替换[user name]为你的用户名
+     - MAC和Linux的请自行寻找配置文件的路径
+     - 替换[user name]为你的用户名
 
-  2. 为`"linter-eslint"`栏添加如下设置：
+   - 2. 为`"linter-eslint"`栏添加如下设置：
   ```
   "linter-eslint":
       disableWhenNoEslintConfig: false
       eslintrcPath: "C:\\Users\\[user name]\\"
       globalNodePath: "C:\\Program Files\\nodejs"
   ```
-  - eslintrcPath将是存放es-lint配置文件的路径，一般选择自己的用户文档
-  - 替换[user name]为你的用户名
-  - globalNodePath是nodejs的安装路径
+     - eslintrcPath将是存放es-lint配置文件的路径，一般选择自己的用户文档
+     - 替换[user name]为你的用户名
+     - globalNodePath是nodejs的安装路径
 
 3. 配置eslint：
