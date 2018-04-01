@@ -28,12 +28,12 @@ linter-eslint的配置步骤稍微繁琐一些。
 
 2. 对linter-eslint进行设置，以下设置也可以在Atom的插件设置区完成：
 
-   - 1. 找到：
+    - 1. 找到：
   `C:\Users\[user name]\.atom\config.cson`
      - MAC和Linux的请自行寻找配置文件的路径
      - 替换[user name]为你的用户名
 
-   - 2. 为`"linter-eslint"`栏添加如下设置：
+    - 2. 为`"linter-eslint"`栏添加如下设置：
      -  ```
         "linter-eslint":
             disableWhenNoEslintConfig: false
