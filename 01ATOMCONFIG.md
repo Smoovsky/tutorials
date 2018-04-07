@@ -99,4 +99,5 @@ https://eslint.org/docs/user-guide/configuring
   'atom-text-editor':
     'ctrl-q': 'linter-eslint:fix-file'
   ```
-这样ctrl+q后会自动修复可以修复的不符合设定的代码。
+这样ctrl+q后会自动修复可以修复的不符合设定的代码。    
+以及使用ctrl+alt+f（默认）调用prettier，美化代码格式。
