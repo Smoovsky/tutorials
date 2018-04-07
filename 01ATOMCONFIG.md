@@ -88,6 +88,7 @@ linter-eslint的配置步骤稍微繁琐一些。
             }
         }
       ```
+把`.eslintrc.json`放置到`C:\\Users\\[user name]\\`目录下。
 说明：  
    - 1.`"parser": "babel-eslint"`:使用babel-eslint作为parser，因为默认的parser不支持很多将要加入的特性，比如类在constructor外的地方初始化变量，直接在类里面声明箭头函数等等。
    - 2.`"extends": ["eslint:recommended", "plugin:react/recommended"]`加载linter的react插件,并使用推荐配置。
