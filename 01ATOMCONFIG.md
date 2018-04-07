@@ -46,48 +46,48 @@ linter-eslint的配置步骤稍微繁琐一些。
 3. 配置eslint:  
 创建`.eslintrc.json`并将下面的配置内容黏贴进去:  
    -  ```
-  {
-      "env": {
-          "browser": true,
-          "es6": true
-      },
-      "extends": ["eslint:recommended", "plugin:react/recommended"],
-  	"parser": "babel-eslint",
-      "parserOptions": {
-          "ecmaFeatures": {
-              "experimentalObjectRestSpread": true,
-              "jsx": true
-          },
-          "sourceType": "module"
-      },
-      "plugins": [
-          "react"
-      ],
-      "rules": {
-          "indent": [
-              "error",
-              2,
-  			{ "SwitchCase": 1 }
-          ],
-          "linebreak-style": [
-              "error",
-              "windows"
-          ],
-          "quotes": [
-              "error",
-              "single"
-          ],
-          "semi": [
-              "error",
-              "always"
-          ],
-  		"react/prop-types": [
-  			0
-  		],
-  		"strict": 0
-      }
-  }
-  ```
+        {
+            "env": {
+                "browser": true,
+                "es6": true
+            },
+            "extends": ["eslint:recommended", "plugin:react/recommended"],
+        	"parser": "babel-eslint",
+            "parserOptions": {
+                "ecmaFeatures": {
+                    "experimentalObjectRestSpread": true,
+                    "jsx": true
+                },
+                "sourceType": "module"
+            },
+            "plugins": [
+                "react"
+            ],
+            "rules": {
+                "indent": [
+                    "error",
+                    2,
+        			{ "SwitchCase": 1 }
+                ],
+                "linebreak-style": [
+                    "error",
+                    "windows"
+                ],
+                "quotes": [
+                    "error",
+                    "single"
+                ],
+                "semi": [
+                    "error",
+                    "always"
+                ],
+        		"react/prop-types": [
+        			0
+        		],
+        		"strict": 0
+            }
+        }
+      ```
 说明：  
    - 1.`"parser": "babel-eslint"`:使用babel-eslint作为parser，因为默认的parser不支持很多将要加入的特性，比如类在constructor外的地方初始化变量，直接在类里面声明箭头函数等等。
    - 2.`"extends": ["eslint:recommended", "plugin:react/recommended"]`加载linter的react插件,并使用推荐配置。
